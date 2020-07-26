@@ -599,7 +599,7 @@ states/Run/node = SubResource( 37 )
 states/Run/position = Vector2( 741, 146 )
 transitions = [ "Idle", "Run", SubResource( 38 ), "Run", "Idle", SubResource( 39 ), "Idle", "Attack", SubResource( 40 ), "Attack", "Idle", SubResource( 41 ), "Roll", "Idle", SubResource( 42 ), "Idle", "Roll", SubResource( 43 ) ]
 start_node = "Idle"
-graph_offset = Vector2( 45, -20 )
+graph_offset = Vector2( 31, -7 )
 
 [sub_resource type="AnimationNodeStateMachinePlayback" id=45]
 
@@ -642,10 +642,10 @@ anims/RunUp = SubResource( 17 )
 tree_root = SubResource( 44 )
 anim_player = NodePath("../AnimationPlayer")
 parameters/playback = SubResource( 45 )
-parameters/Attack/blend_position = Vector2( -0.0707744, 0.488341 )
-parameters/Idle/blend_position = Vector2( 0, 0 )
-parameters/Roll/blend_position = Vector2( -0.00249791, 0.00843978 )
-parameters/Run/blend_position = Vector2( 0, 0 )
+parameters/Attack/blend_position = Vector2( 0, 1 )
+parameters/Idle/blend_position = Vector2( 0, 1 )
+parameters/Roll/blend_position = Vector2( -0.0341382, 0.620349 )
+parameters/Run/blend_position = Vector2( 0, 1 )
 
 [node name="HitboxPivot" type="Position2D" parent="."]
 position = Vector2( 0, -4 )
